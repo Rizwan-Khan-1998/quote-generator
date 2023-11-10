@@ -110,12 +110,12 @@ body {
   }
   .author {
     font-size: 1.5rem;
-    margin-buttom: 1.5rem; 
+    margin-buttom: 2.5rem; 
   }
   .media-btn {
     font-size: 2.5rem;
   }
   .new-quote-btn {
-    font-size: 2.5rem;    
+    font-size: 1.5rem;    
   }
 }

@@ -47,3 +47,22 @@ twitterBtn.addEventListener("click", () => {
     window.open(twitterUrl, "_blank");
   });
 });
+function copy() {
+  const text = `${quoteElement.innerText} ${author.innerText}`
+  navigator.clipboard.writeText(text).then( ()=> {
+    const tooltip = document.createElement("span");
+    tooltip.innerText = "Copied!";
+    tooltip.classList.add("tooltip");
+    console.log(tooltip)
+    copyBtn.insertAdjacentElement('beforeend', tooltip);
+
+    setTimeout(() => {
+      tooltip.remove();
+    }, 2000);
+  }
+  )
+}
+
+copyBtn.addEventListener('click', () => {
+  copy()
+})

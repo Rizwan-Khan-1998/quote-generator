@@ -2,7 +2,9 @@ const quoteElement = document.getElementById("quote");
 const newQuoteBtn = document.getElementById("new-quote");
 const author = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter-share");
-const instagramBtn = document.getElementById("instagram-share");
+const copyBtn = document.getElementById("copy-btn");
+
+
 
 let apiQuotes = [];
 
@@ -47,6 +49,8 @@ twitterBtn.addEventListener("click", () => {
     window.open(twitterUrl, "_blank");
   });
 });
+
+
 function copy() {
   const text = `${quoteElement.innerText} ${author.innerText}`
   navigator.clipboard.writeText(text).then( ()=> {

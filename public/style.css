@@ -50,7 +50,7 @@ body {
 }
 
 .author {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: rgba(58, 39, 39, 0.164);
   margin-top: 10px;
@@ -72,12 +72,12 @@ body {
   font-weight: 600;
   border-radius: 12px;
   padding: 0.6em 1em;
-  color: white;
 }
+
 
 .media-btn,
 .new-quote-btn {
-  color: white;
+  color: #b8224c;
   box-shadow: 2px 6px 0px 0px rgb(87, 13, 31);
   transition: color 0.2s ease-in;
   cursor: pointer;
@@ -87,15 +87,14 @@ body {
 
 .new-quote-btn:hover {
   background: rgba(0, 0, 0, 0.85);
-  color: #b8224c;
 }
 
 .new-quote-btn:active,
 .media-btn:active {
   transform: translate(0.5%, 5%);
   box-shadow: 0px 0px 0px 0px transparent;
+  color: #fff0f3;
 }
-
 #copy-btn {
   position: relative;
 }
@@ -112,6 +111,9 @@ body {
   letter-spacing: 0.01rem;
   font-weight: 500;
 }
+
+
+
 .fa-twitter:hover {
   color: #1da1f2;
 }
@@ -119,20 +121,4 @@ body {
 .long-text {
   font-size: 2rem;
   font-weight: 400;
-}
-
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 10px;
-  }
-  .author {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem; 
-  }
-  .media-btn {
-    font-size: 2.5rem;
-  }
-  .new-quote-btn {
-    font-size: 1.5rem;    
-  }
 }

@@ -3,6 +3,8 @@ const newQuoteBtn = document.getElementById("new-quote");
 const author = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter-share");
 const copyBtn = document.getElementById("copy-btn");
+const speakBtn = document.getElementById("speak-btn");
+
 
 
 
@@ -67,6 +69,15 @@ function copy() {
   )
 }
 
+
+function speak() {
+  const text = quoteElement.innerText
+  let speech = new SpeechSynthesisUtterance(text)
+     speechSynthesis.speak(speech)
+}
 copyBtn.addEventListener('click', () => {
   copy()
 })
+
+speakBtn.addEventListener('click', speak)
+
